@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+/* general styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* whole chat container styling */
+.chat-container {
+  background: #fff;
+  width: 400px;
+  height: 600px;
+  display: flex; 
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* chat box styling (messaging area) */
+.chat-box {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* chat bubble styling */
+.chat-bubble { 
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 15px;
+  max-width: 70%;
+}
+
+/* bot message color styling */
+.chat-bubble.bot {
+  background-color: #e2eafc;
+  align-self: flex-start;
+  text-align: left;
+}
+
+/* user message color styling */
+.chat-bubble.user {
+  background-color: #d1f7c4;
+  align-self: flex-end;
+  text-align: right;
+}
+
+/* input and button form styling */
+.chat-form {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+/* input field styling */
+.chat-form input { 
+  flex: 1; 
+  border: none; 
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* send button styling */
+.chat-form button {
+  background-color: #2b6cb0;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding: 10px;
+  border: none;
+  cursor: pointer;
 }

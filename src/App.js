@@ -54,7 +54,7 @@ function App() {
       if (isValidOrderNumber) {
         addBotMessage("Got it! Would you like to track your order status, cancel your order, or report as lost?");
         setStep(2);
-      } else if (text.includes("don't know") || text.includes("not sure") || text.includes("help")) {
+      } else if (text.includes("don't know") || text.includes("not sure") || text.includes("help") ||  text.includes("dont")){
         addBotMessage("No problem! If you don't have your order number, please provide me with your email or phone number.");
         setStep(1);
       } else {
@@ -89,7 +89,7 @@ function App() {
         addBotMessage("Your order has been canceled and a refund has been initiated. Is there anything else I can help you with?");
         setStep(4);
       } else if (text.includes("resent")) {
-        addBotMessage("Your order has been marked as lost and a new package has been sent. Is there anything else I can help you with?");
+        addBotMessage("Your order has been processed to be resent. Expected arrival is within 5 business days. Is there anything else I can help you with?");
         setStep(4);
       } else {
         addBotMessage("Hmm, I didn't quite catch that. Would you like to refund the order or would you like the package to be resent?");
@@ -99,8 +99,11 @@ function App() {
       if (text.includes("yes") || text.includes("sure") || text.includes("ye")) {
         addBotMessage("Great! Please enter your 6-digit order number so I can assist you further.");
         setStep(0);
+      } else if (text.includes("no") || text.includes("nope") || text.includes("nah")) {
+        addBotMessage("Okay! If you need anything else, just enter your 6-digit oder number and I'll be here to help.");
+        setStep(0);
       } else {
-        addBotMessage("Okay! If you need anything else, just let me know.");
+        addBotMessage("Thanks for chatting with me! If you need anything else, just enter your 6-digit order number and I'll be here to help.");
         setStep(0);
       }
     }

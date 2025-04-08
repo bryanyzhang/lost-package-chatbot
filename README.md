@@ -1,3 +1,33 @@
+# Setup/Installation instructions
+
+### Prerequisites
+
+Before you begin, make sure you have the following installed:
+- [Node.js](https://nodejs.org/en/download/) (v14 or higher)
+- npm (comes with Node.js)
+
+### 🔧 Setup Steps
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/bryanyzhang/lost-package-chatbot.git
+cd lost-package-chatbot
+```
+
+2. **Install dependencies**
+npm install
+
+3. **Run app locally**
+npm start
+
+# Approach
+I chose Task 1: Helping a customer track a lost package because it reflects a common and relatable issue that many users face in the real world. My focus was on creating a clear and intuitive conversation flow that naturally guides users through the process, allowing them to respond in a way that feels familiar and easy to follow. I built the chatbot using React, utilizing useState and useEffect to manage state and user interactions. Users can provide an order number, use their email or phone number, or simply say “I don’t know,” giving them flexibility in how they engage with the bot. I also implemented basic error handling to prompt users when input is invalid or unclear. For the UI, I used a clean, color-coded chat design, with bot messages in blue on the left and user messages in green on the right to mirror the look of a typical messaging app and make the experience feel more natural.
+
+# Examples
+![Chatbot inital](./src/screenshots/Screenshot 2025-04-07 at 5.07.35\342\200\257PM.png)
+![Chatbot in use](./src/screenshots/Screenshot 2025-04-07 at 8.21.03\342\200\257PM.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

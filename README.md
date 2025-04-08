@@ -20,6 +20,8 @@ cd lost-package-chatbot
 3. **Run app locally**
 `npm start`
 
+4. **The app will open at http://localhost:3000 by default**
+
 # Approach
 I chose Task 1: Helping a customer track a lost package because it reflects a common and relatable issue that many users face in the real world. My focus was on creating a clear and intuitive conversation flow that naturally guides users through the process, allowing them to respond in a way that feels familiar and easy to follow. I built the chatbot using React, utilizing useState and useEffect to manage state and user interactions. Users can provide an order number, use their email or phone number, or simply say “I don’t know,” giving them flexibility in how they engage with the bot. I also implemented basic error handling to prompt users when input is invalid or unclear. For the UI, I used a clean, color-coded chat design, with bot messages in blue on the left and user messages in green on the right to mirror the look of a typical messaging app and make the experience feel more natural.
 
